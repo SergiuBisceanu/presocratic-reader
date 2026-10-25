@@ -1,0 +1,50 @@
+name: Publish approved release
+
+on:
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: 'I approve making this revision public'
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: ${{ inputs.publish == true }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out the approved revision
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - name: Read the configured Pages address
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Build and validate the publication
+        env:
+          PAGES_BASE_URL: ${{ steps.pages.outputs.base_url }}
+          PYTHONDONTWRITEBYTECODE: '1'
+        run: python3 scripts/build-pages.py
+      - name: Upload the publication
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - name: Publish
+        id: deployment
+        uses: actions/deploy-pages@v4
