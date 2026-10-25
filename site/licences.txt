@@ -1,0 +1,44 @@
+Third-party notices
+
+The adapted ancient-text dataset and editorial metadata are distributed under Creative Commons Attribution–ShareAlike 4.0 to the extent applicable:
+https://creativecommons.org/licenses/by-sa/4.0/
+
+Digital transcriptions supplied by Forage, Open Greek and Latin / First1KGreek, Perseus Digital Library at Tufts University, Cultural Heritage Language Technologies, and Digital Fragmenta Historicorum Graecorum (Monica Berti) are used under CC BY-SA 4.0. Melissus B11 also credits Lia Hanhardt and the Center for Hellenic Studies for its digital transcription. Attribution, source links, and editorial changes are retained in the datasets and the in-site Texts & licences.
+
+Historical German translations by Hermann Diels (1906/1922), Victor Ryssel, Heinrich Gomperz and other named translators are credited per passage and retain public-domain status. French, Italian and Spanish historical translations likewise retain their stated rights; the exact edition and translator are recorded with each passage. Historical English translations by John Burnet (1908; 1920 where specified), Arthur Fairbanks (1898), Benjamin Jowett, Henry Graham Dakyns (1897), William Bridgman (1804), Thomas Taylor (1818), Thomas Stanley, R. D. Hicks, C. D. Yonge, W. E. Leonard, H. G. Evelyn-White, J. G. Frazer, William Wilson, Kenneth Sylvan Guthrie, T. L. Heath, Bernadotte Perrin, and F. C. Babbitt are credited individually. Their public-domain texts retain public-domain status. No new exclusive rights are claimed over ancient Greek or Latin texts.
+
+Original-language passages follow identified historical editions, chiefly Diels 1903, 1906, 1912 and 1922, with other ancient authors’ editions identified per passage. Sources were checked under the ordinary life-plus-70 term and the separate historical-publication screen. Any separately stated digital transcription licence remains applicable.
+
+Cardo (David J. Perry), EB Garamond and Inter are used under SIL Open Font License 1.1. Full font licences are in fonts.
+
+This file does not grant a separate public licence to the interface source code.
+
+Current selection: only translations published before 1950 and admitted by the exact-source rights review are included. The publication date is an editorial cutoff, not itself evidence of public-domain status. No worldwide legal guarantee is claimed.
+
+DESIGN REFERENCE
+The reading layout takes its design cues from John H. Boyer’s Plato Reader and Greek Drama Reader. The Presocratic Reader is an independent project by Sergiu Alexandru Bîsceanu.
+https://plato.johnhboyer.com/
+https://greekdrama.johnhboyer.com/
+
+ARTWORK
+The four historical artworks and their museum reproductions retain public-domain status. They are not relicensed as part of the text dataset. Artwork, artist, date, collection, accession number and source links appear at /attribution/#artworks and in data/artworks.json. The Rijksmuseum images of Heraclitus and Democritus (Hendrick ter Brugghen, 1628) and Pythagoras (René Boyvin, 1566) were obtained through Wikimedia Commons, whose file records also carry CC0 notices. Salvator Rosa’s Studies for the Death of Empedocles (after 1666, KKSgb438) comes from SMK’s public-domain image service. Provider-generated smaller reproductions are displayed in cropped frames without recolouring. The original image files are unchanged; source links lead to the complete works.
+https://creativecommons.org/publicdomain/mark/1.0/
+https://creativecommons.org/publicdomain/zero/1.0/
+
+GREEK DICTIONARY
+Henry George Liddell and Robert Scott, A Greek-English Lexicon, revised and augmented throughout by Sir Henry Stuart Jones with Roderick McKenzie (Oxford: Clarendon Press, 1940).
+Text provided under a CC BY-SA license by Perseus Digital Library, http://www.perseus.tufts.edu, with funding from The National Endowment for the Humanities.
+Data accessed from https://github.com/PerseusDL/lexica/ on 25 October 2026, revision 51b2f90b515d51ff1052bb9f0c5ec17fa7246859.
+Adaptations: selection of short published senses, Greek encoding conversion to Unicode, extraction to JSON, and links from corpus word forms to candidate dictionary entries. The dictionary selection is distributed under CC BY-SA 4.0. The full source availability statement is preserved at data/lsj-LICENSE.txt. Exact source provenance is in data/lsj.json.
+https://creativecommons.org/licenses/by-sa/4.0/
+
+Morpheus, from https://github.com/perseids-tools/morpheus, is used at build time for morphological analyses under the Mozilla Public License 2.0. Its engine is not bundled in the browser. These analyses identify possible headwords; they do not translate or disambiguate the passage.
+https://www.mozilla.org/MPL/2.0/
+
+Source repositories and collections:
+https://forage.com/presocratics/fragments/
+https://github.com/OpenGreekAndLatin/First1KGreek
+https://github.com/PerseusDL/canonical-greekLit
+https://www.dfhg-project.org/
+
+Changes include alignment of published translations, corrected boundaries, cross-references, and documented attribution corrections. Per-passage notes and source links accompany the reading text.

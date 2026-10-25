@@ -1,0 +1,72 @@
+{
+  "packages": [
+    {
+      "name": "@huggingface/transformers",
+      "version": "3.8.1",
+      "license": "Apache-2.0",
+      "source": "https://www.npmjs.com/package/@huggingface/transformers/v/3.8.1"
+    },
+    {
+      "name": "onnxruntime-web",
+      "version": "1.22.0-dev.20250409-89f8206ba4",
+      "commit": "89f8206ba4f1c22c39e0297fb55272e8ce8cd7d0",
+      "license": "MIT",
+      "source": "https://github.com/microsoft/onnxruntime"
+    },
+    {
+      "name": "@huggingface/jinja",
+      "license": "MIT",
+      "source": "https://github.com/huggingface/huggingface.js/tree/main/packages/jinja",
+      "distribution": "Embedded in the published @huggingface/transformers 3.8.1 web bundle; upstream bundle does not state the embedded package version."
+    },
+    {
+      "name": "onnxruntime-common",
+      "version": "1.21.0",
+      "license": "MIT",
+      "source": "https://www.npmjs.com/package/onnxruntime-common/v/1.21.0"
+    }
+  ],
+  "files": [
+    {
+      "file": "JINJA-LICENSE.txt",
+      "bytes": 1069,
+      "sha256": "d6e7b19451c1b3d1d66353bb4b1274138953b3bfd9ae60c56e77b1f548796982"
+    },
+    {
+      "file": "ONNX-LICENSE.txt",
+      "bytes": 1073,
+      "sha256": "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c"
+    },
+    {
+      "file": "ONNX-ThirdPartyNotices.txt",
+      "bytes": 326866,
+      "sha256": "e9e90971a8e75a9a8ac0c6412e29c1202d079998389915aa485f46c816c3b4cc"
+    },
+    {
+      "file": "TRANSFORMERS-LICENSE.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "file": "ort-wasm-simd-threaded.mjs",
+      "bytes": 20856,
+      "sha256": "43c25054b6b9ac000f786c65545ff83a45f871e0e310e8c2f4d48a363bb66db4"
+    },
+    {
+      "file": "ort-wasm-simd-threaded.wasm",
+      "bytes": 11133407,
+      "sha256": "f061472c6e77d6d50d079aacdc0ff9b63fee287ddd2cbf46cf62438d3891de2b"
+    },
+    {
+      "file": "transformers.min.js",
+      "bytes": 539871,
+      "sha256": "299644b6960a50f2e48445fdc7682dc53ecb3ea1cba9eeff80287b2eb93377c0"
+    }
+  ],
+  "build": {
+    "bundler": "esbuild@0.25.11",
+    "entry": "@huggingface/transformers/dist/transformers.web.min.js",
+    "backend": "onnxruntime-web/dist/ort.wasm.min.mjs",
+    "description": "Locally bundled WASM-only backend; no model or tokenizer changes."
+  }
+}

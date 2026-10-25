@@ -1,0 +1,7 @@
+all-MiniLM-L6-v2 sentence embedding model
+Original model: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
+ONNX conversion: https://huggingface.co/Xenova/all-MiniLM-L6-v2
+Pinned ONNX revision: 751bff37182d3f1213fa05d7196b954e230abad9
+Licence: Apache License 2.0 (full text in LICENSE.txt).
+Model weights and tokenizer files are redistributed unchanged.
+This model retrieves published passages; it does not generate translations.
